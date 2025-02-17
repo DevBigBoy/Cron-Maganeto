@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+<!--   <head>-->
+<!--       <title>Hello Layout</title>-->
+<!--   </head>-->
+    <body>
+<!--        <referenceBlock name="page.main.title">-->
+<!--            <action method="setPageTitle">-->
+<!--                <argument name="page_title" xsi:type="string" >Something Else</argument>-->
+<!--            </action>-->
+<!--        </referenceBlock>-->
+        <referenceContainer name="content">
+            <block name="layout_examples"
+                   class="Bigboy\LayoutExample\Block\Layout\Index\Index"
+                   template="Bigboy_LayoutExample::content.phtml">
+                <block name="layout_note"
+                       class="Bigboy\LayoutExample\Block\Layout\Index\Index"
+                       template="Bigboy_LayoutExample::note.phtml"/>
+            </block>
+        </referenceContainer>
+    </body>
+</page>
