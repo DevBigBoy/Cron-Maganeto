@@ -17,6 +17,12 @@
                 <block name="layout_note"
                        class="Bigboy\LayoutExample\Block\Layout\Index\Index"
                        template="Bigboy_LayoutExample::note.phtml"/>
+                <block name="cms_block_example"
+                       class="Magento\Cms\Block\Block">
+                    <arguments>
+                        <argument name="block_id" xsi:type="string" >cms_block_example</argument>
+                    </arguments>
+                </block>
             </block>
         </referenceContainer>
     </body>
